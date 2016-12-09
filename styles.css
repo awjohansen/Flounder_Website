@@ -1,1 +1,118 @@
-/* CSS! */
+.flounder {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  min-height: 600px;
+  z-index: 0;
+
+}
+
+.flounder .content {
+  margin: 0px auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.flounder p {
+  position: relative;
+  z-index: 2;
+  color: #6EFCBB;
+  font-weight: normal;
+  font-size: 18pt;
+  font-family: sans-serif;
+  line-height: 25px;
+  position: absolute;
+  position: absolute;
+  left: 0; right:0;
+  margin: auto;
+  top: 325px;
+  width: 820px;
+  text-align: center
+
+}
+
+img.checker {
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  width: 500px;
+  overflow-y: hidden;
+  z-index: -1;
+  animation: hueRotate 5s linear infinite;
+}
+
+img.logo {
+  z-index: 1;
+  width: 300px;
+  position: absolute;
+  position: absolute;
+  left: 0; right:0;
+  margin: auto;
+  top: 10px;
+  animation: hueRotate 5s linear infinite;
+}
+
+iframe.mainvid {
+  z-index: 1;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  position: absolute;
+  left: 0; right:0;
+  margin: auto;
+  top: 300px;
+
+}
+
+img.teamphoto {
+  z-index: 1;
+  width: 800px;
+  position: absolute;
+  position: absolute;
+  left: 0; right:0;
+  margin: auto;
+  top: 425px;
+}
+#videos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;
+  position: absolute;
+  position: absolute;
+  left: 0; right:0;
+  margin: auto;
+  top: 700px;
+
+}
+
+#videos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 150% 0; }
+}
+
+@keyframes colorShift {
+  0% { background-color: #FF8099; }
+  50% { background-color: #5DBCD2; }
+  100% { background-color: #FF8099; }
+}
+
+@keyframes hueRotate {
+  0% { filter: hue-rotate(0deg);
+  ; }
+  50% { filter: hue-rotate(180deg); }
+  100% { filter: hue-rotate(359deg); }
+}
