@@ -5,18 +5,19 @@
   bottom: 0;
   position: absolute;
   min-height: 600px;
-  z-index: 0;
+  z-index: 2;
 
 }
 
 .flounder .content {
   margin: 0px auto;
   max-width: 1000px;
-  position: relative;
+  /*position: relative;*/
+  z-index: 2;
 }
 
 .flounder p {
-  position: relative;
+  /*position: relative;*/
   z-index: 2;
   color: #6EFCBB;
   font-weight: normal;
@@ -24,7 +25,7 @@
   font-family: sans-serif;
   line-height: 25px;
   position: absolute;
-  position: absolute;
+
   left: 0; right:0;
   margin: auto;
   top: 325px;
@@ -34,7 +35,6 @@
 }
 
 img.checker {
-  position: absolute;
   left: 150px;
   top: 0px;
   width: 500px;
@@ -47,30 +47,28 @@ img.logo {
   z-index: 1;
   width: 300px;
   position: absolute;
-  position: absolute;
   left: 0; right:0;
   margin: auto;
   top: 10px;
   animation: hueRotate 5s linear infinite;
 }
 
-iframe.mainvid {
+/*iframe.mainvid {
   z-index: 1;
   width: 800px;
   height: 400px;
-  position: absolute;
-  position: absolute;
+  position: relative;
   left: 0; right:0;
   margin: auto;
-  top: 300px;
+  top: 300px;*/
 
 }
 
 img.teamphoto {
   z-index: 1;
   width: 800px;
-  position: absolute;
-  position: absolute;
+  /*position: absolute;
+  position: absolute;*/
   left: 0; right:0;
   margin: auto;
   top: 425px;
@@ -84,8 +82,8 @@ img.teamphoto {
   -moz-column-gap:      0px;
   column-count:         5;
   column-gap:           0px;
-  position: absolute;
-  position: absolute;
+  /*position: absolute;
+  position: absolute;*/
   left: 0; right:0;
   margin: auto;
   top: 700px;
@@ -115,4 +113,28 @@ img.teamphoto {
   ; }
   50% { filter: hue-rotate(180deg); }
   100% { filter: hue-rotate(359deg); }
+}
+
+.instagram{
+  position:relative;;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 600px;
+  z-index: 2;
+}
+#rudr_instafeed{
+
+  list-style:none
+}
+#rudr_instafeed li{
+  float:left;
+  width:200px;
+  height:200px;
+  margin:10px
+}
+#rudr_instafeed li img{
+  max-width:100%;
+  max-height:100%;
 }
