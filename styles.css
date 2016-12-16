@@ -4,6 +4,20 @@
   margin: 0 auto;
 }
 
+.title {
+  z-index: 2;
+  color: #82C0E9;
+  font-weight: normal;
+  font-family: sans-serif;
+  margin: auto;
+  top: 540px;
+  width: 820px;
+  font-family: "andale mono";
+  font-size: 5pt;
+  text-decoration: none;
+  color: black;
+}
+
 .content.index ul {
   overflow: auto;
   padding: 0;
@@ -14,6 +28,7 @@
 .header {
   display: block;
   margin-top: 25px;
+  padding-bottom: 50px;
 }
 
 .content.index p {
@@ -32,13 +47,88 @@
   text-align: center
 }
 
+.content.about p {
+  /*position: relative;*/
+  z-index: 2;
+  color: #82C0E9;
+  font-weight: normal;
+  font-size: 18pt;
+  font-family: sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 704px; right: 0;
+  margin: auto;
+  top: 378px;
+  width: 820px;
+  text-align: center
+  display: block;
+  font-family: "andale mono";
+  font-size: 10pt;
+  line-height: 18pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #82C0E9;
+}
+
+.content.about h1 {
+  /*position: relative;*/
+  z-index: 2;
+  color: #82C0E9;
+  font-weight: normal;
+  font-size: 18pt;
+  font-family: sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 150px; right: 0;
+  margin: auto;
+  top: 38px;
+  width: 820px;
+  text-align: center
+  display: block;
+  font-family: "andale mono";
+  font-size: 21pt;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+.content.about h2 {
+  /*position: relative;*/
+  z-index: 2;
+  color: #82C0E9;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 160px; right: 0;
+  margin: auto;
+  top: 540px;
+  width: 820px;
+  text-align: center
+  display: block;
+  font-family: "andale mono";
+  font-size: 18pt;
+  font-weight: bold:
+  text-decoration: none;
+  color: black;
+}
+
+.content.team{
+  position:absolute;
+  display: block;
+  top: 100px;
+
+}
+
+
 /*.header {
   max-width: 660px;
   position: absolute;
   display: block;
 }*/
 
-img.checker {
+img.logo {
   left: 150px;
   top: 0px;
   width: 500px;
@@ -49,7 +139,7 @@ img.checker {
 
 img.logo {
   display: block;
-  width: 100px;
+  width: 125px;
   height: auto;
 }
 

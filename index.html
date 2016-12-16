@@ -14,7 +14,7 @@
 				<ol>
 					<li class="home">
 						<a href="index.html">
-							<img class="logo" src="/Users/whitneybadge/Documents/cc-f16/Final/Website/Flounder_Website/Flounder_Website-master/Flounder_Website/img/Flounder Logo Blue.png"/>
+							<img class="logo" src="/Users/whitneybadge/Documents/cc-f16/Final/Flounder_Website/img/Flounder Logo Blue.png"/>
 						</a>
 					</li>
 
@@ -32,26 +32,76 @@
 				</ol>
 			</nav>
 
-
 			<div class="content index">
 				<div class="header">
-					<img src="/Users/whitneybadge/Documents/cc-f16/Final/Website/Flounder_Website/Flounder_Website-master/Flounder_Website/img/FLOUNDER LONG NAME.png" style="width:650px;height:auto;">
-				</div>
-				<ul id="rudr_instafeed"></ul>
-				<div class="vids">
-					<!-- //feature our latest youtube video// -->
-					<iframe width="640" height="440" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=UCT598ifGFAV7ENc-vaDe4zQ" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="vids">
-					//feature three thumbnails of our following videos on youtube//
-				</div>
-        <!-- <iframe  class="mainvid" width="300" height="200" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=homemadeflounder" frameborder="0" allowfullscreen></iframe>
-				<div class="instagram"> -->
+					<img src="/Users/whitneybadge/Documents/cc-f16/Final/Flounder_Website/img/FLOUNDER LONG NAME.png" style="width:650px;height:auto;">
+			</div>
+
+			<div class="title documentation">
+				<h1>A team of students doing random challenges...</h1>
+			</div>
+
+		<div class="vids">
+				<html>
+					<body>
+						<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+						<div id="player"></div>
+
+						<script>
+							// 2. This code loads the IFrame Player API code asynchronously.
+							var tag = document.createElement('script');
+
+							tag.src = "https://www.youtube.com/iframe_api";
+							var firstScriptTag = document.getElementsByTagName('script')[0];
+							firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+							// 3. This function creates an <iframe> (and YouTube player)
+							//    after the API code downloads.
+							var player;
+							function onYouTubeIframeAPIReady() {
+								player = new YT.Player('player', {
+									height: '360',
+									width: '640',
+									videoId: 'Ehch5DhxVB4',
+									events: {
+										'onReady': onPlayerReady,
+										'onStateChange': onPlayerStateChange
+									}
+								});
+							}
+
+							// 4. The API will call this function when the video player is ready.
+							function onPlayerReady(event) {
+
+							}
+
+							// 5. The API calls this function when the player's state changes.
+							//    The function indicates that when playing a video (state=1),
+
+							function onPlayerStateChange(event) {
+								if (event.data == YT.PlayerState.PLAYING && !done) {
+
+									done = false;
+								}
+							}
+							function stopVideo() {
+								player.stopVideo();
+							}
+						</script>
+					</body>
+				</html>
 			</div>
 
 
+			<div class="title documentation">
+				<h1>...and documenting them along the way.</h1>
+			</div>
 
-			<!-- <section id="videos"></section> -->
+			<ul id="rudr_instafeed"></ul>
+
+
+
+
 
 		</body>
 	</html>
